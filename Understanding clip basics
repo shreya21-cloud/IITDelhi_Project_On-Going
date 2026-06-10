@@ -1,0 +1,42 @@
+# CLIP Basics
+
+## What is CLIP?
+
+CLIP (Contrastive Language Image Pre-training) is a multimodal AI model developed by OpenAI.
+
+It learns the relationship between images and text by mapping both into a shared embedding space.
+
+## Architecture
+
+Image
+→ Image Encoder
+→ Image Embedding
+
+Text
+→ Text Encoder
+→ Text Embedding
+
+Similarity between embeddings helps determine whether an image and text match.
+
+## Key Concepts
+
+- Image Encoder
+- Text Encoder
+- Embeddings
+- Cosine Similarity
+- Contrastive Learning
+
+## Applications
+
+- Image Search
+- Product Recommendation
+- Multimodal Retrieval
+- Visual Question Answering
+
+## My Learning
+
+In this repository, I am learning:
+1. CLIP architecture
+2. Embeddings and vectors
+3. Image-text similarity
+4. Contrastive learning
