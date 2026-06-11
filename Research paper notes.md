@@ -37,6 +37,8 @@ Text:
 Pick up the red bell pepper
 
 Output: Only grasp poses belonging to the red bell pepper.
+
+
 3. What is GSNet?
 GSNet is the base grasping network.
 
