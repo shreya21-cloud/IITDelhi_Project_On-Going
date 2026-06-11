@@ -16,3 +16,40 @@ Goal:
 
 Enable robots to grasp a specific object using natural language commands.
 Improve speed, precision, and generalization.
+
+2. Main Idea of Grasp-CLIP
+
+Grasp-CLIP combines:
+
+GSNet (6-DoF grasp generation)
+CLIP (Image + Text understanding)
+
+Input Modalities:
+
+Point Cloud
+RGB Image
+Text Instruction
+
+Example:
+
+Text:
+
+Pick up the red bell pepper
+
+Output: Only grasp poses belonging to the red bell pepper.
+3. What is GSNet?
+GSNet is the base grasping network.
+
+Functions:
+Takes point cloud as input.
+Generates 1024 candidate grasp points.
+Predicts:
+Approach direction
+Grasp rotation
+Grasp depth
+Gripper width
+Grasp score
+
+Limitation:
+
+Does not know which object is the target object.
