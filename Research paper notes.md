@@ -138,3 +138,30 @@ Instruction:
 Pick up the apple
 
 Image features become focused on the apple.
+
+7. Module 2: Dense Fusion Module
+Purpose:
+
+Combine visual information with point cloud information.
+
+Problem:
+
+Point cloud alone cannot distinguish similar objects.
+
+Solution:
+
+Fuse:
+Point cloud features
+Image features
+
+Inspired by:
+
+DenseFusion
+
+Output:
+
+Multimodal features.
+
+Benefit:
+
+Better object recognition.
