@@ -110,3 +110,31 @@ Dense Fusion Module
 Selection Module
       ↓
 Target Object Grasp Poses
+
+
+6. Module 1: Image-Text Fusion Module
+   Purpose:
+
+Combine image information with text instructions.
+
+Process:
+
+RGB image → CLIP Image Encoder.
+Text command → CLIP Text Encoder.
+Features fused using element-wise multiplication.
+
+Output:
+
+Text-aware image features.
+
+Example:
+
+Image contains:
+
+Apple
+Book
+Instruction:
+
+Pick up the apple
+
+Image features become focused on the apple.
