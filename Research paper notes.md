@@ -81,3 +81,30 @@ Testing:
 Yellow Bell Pepper
 
 CLIP can still understand the relationship.
+
+5. Grasp-CLIP Architecture
+   RGB Image
+      ↓
+CLIP Image Encoder
+      ↓
+Image Features
+
+Text Instruction
+      ↓
+CLIP Text Encoder
+      ↓
+Text Features
+
+Point Cloud
+      ↓
+GSNet
+      ↓
+Point Features
+
+Image + Text Features
+      ↓
+Dense Fusion Module
+      ↓
+Selection Module
+      ↓
+Target Object Grasp Poses
