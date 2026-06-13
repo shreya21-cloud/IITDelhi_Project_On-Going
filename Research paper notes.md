@@ -220,3 +220,26 @@ Total Images	36,210
 
 Additional:
 100 unseen objects used for testing.
+
+0. Generalization Capability
+1. Tested on:
+
+Unseen objects
+New colors
+New descriptions
+
+Examples:
+
+Commands:
+
+Pick up the yellow bell pepper
+Pick up the red bell pepper
+Pick up the pencil case
+
+Result:
+
+Successfully distinguishes objects.
+
+Reason:
+
+CLIP provides strong image-text alignment.
