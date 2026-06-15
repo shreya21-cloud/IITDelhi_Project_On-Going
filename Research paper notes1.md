@@ -296,3 +296,52 @@ Method	Params	Time
 CLIPort	0.21B	0.401s
 Grounded SAM + GSNet	0.83B	0.625s
 Grasp-CLIP	0.18B	0.238s
+
+12. Ablation Study Findings
+Remove Selection Module
+
+Result:
+
+Precision decreases on unseen objects.
+
+Conclusion:
+
+Selection Module improves generalization.
+
+Remove Dense Fusion Module
+
+Result:
+
+Large performance drop.
+
+Conclusion:
+
+Image features are essential.
+Replace CLIP Encoder
+
+Result:
+
+Lower precision.
+
+Conclusion:
+
+CLIP significantly improves understanding and generalization.
+13. Robot Grasping Experiments
+Robot Used:
+
+COBOTTA PRO 900
+
+Results:
+
+Successfully grasped 7 unseen objects.
+Correctly followed language instructions.
+
+Failures:
+
+Complex-shaped teddy bear.
+Keychain.
+Red hardback confused with red bell pepper.
+
+Reason:
+
+Similar visual appearance.
