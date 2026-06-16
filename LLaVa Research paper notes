@@ -20,3 +20,17 @@ VisProg
 ViperGPT
 
 Limitation: Depend on multiple external modules instead of a unified model.
+
+LLaVA's Approach
+Builds a single end-to-end multimodal model.
+Directly connects vision understanding with language generation.
+Designed to handle multiple vision-language tasks through one interface
+
+2. Instruction Tuning
+What is Instruction Tuning?
+Training a model on instruction-answer pairs.
+Helps the model follow natural language commands.
+Improves:
+Zero-shot learning
+Few-shot learning
+Generalization to unseen tasks
