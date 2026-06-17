@@ -84,3 +84,31 @@ Visual Instruction Tuning vs Visual Prompt Tuning
 Improves instruction-following ability	Improves parameter-efficient adaptation
 Focuses on user interaction	Focuses on efficient fine-tuning
 Used in LLaVA	Used for model adaptation
+
+
+Multimodal Chatbot Evaluation
+Objective
+
+Evaluate whether LLaVA can understand images and follow user instructions through natural conversations.
+
+Key Observations
+LLaVA provides detailed and context-aware responses.
+It performs reasoning instead of only describing images.
+Demonstrates behavior similar to GPT-4 on some unseen images.
+Outperforms BLIP-2 and OpenFlamingo in instruction following.
+
+Evaluation Benchmark
+LLaVA-Bench (COCO)
+
+Three types of questions:
+
+Conversation
+Detailed Description
+Complex Reasoning
+
+GPT-4 is used as a judge to evaluate answer quality.
+
+Results
+Full training data achieved 85.1% relative score.
+Using all instruction types produced the best performance.
+Reasoning data significantly improved overall capability.
