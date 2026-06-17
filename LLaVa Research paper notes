@@ -112,3 +112,32 @@ Results
 Full training data achieved 85.1% relative score.
 Using all instruction types produced the best performance.
 Reasoning data significantly improved overall capability.
+
+Comparison with Existing Models
+Model	Overall Score
+OpenFlamingo	19.1
+BLIP-2	38.1
+LLaVA	67.3
+Observation
+
+LLaVA significantly outperforms previous multimodal models in instruction-following tasks.
+
+ScienceQA Evaluation
+Objective
+
+Measure LLaVA’s multimodal reasoning ability on science-related questions containing text and images.
+
+Dataset
+
+ScienceQA:
+
+21K multimodal questions
+Covers science concepts, reasoning, and image understanding.
+Results
+Method	Accuracy
+GPT-4	82.69%
+LLaVA	90.92%
+LLaVA + GPT-4	92.53%
+Observation
+LLaVA achieves strong reasoning performance.
+Combining LLaVA with GPT-4 sets a new State-of-the-Art result.
