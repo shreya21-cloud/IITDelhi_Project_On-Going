@@ -60,6 +60,13 @@ Through these papers, I gained a deeper understanding of:
 * Prepare for future research and implementation work
 * Create a reference collection for AI concepts and architectures
 
+ # Multimodal Product Choice Personalization
+
+**Status:** 🚧 Ongoing
+
+This is an ongoing AI/ML project focused on building a multimodal product choice personalization system using visual and textual information. The project aims to learn user preferences by combining image and text embeddings with historical interaction data to generate personalized product recommendations. The current work includes data preprocessing, preference dataset creation, train-test split, embedding generation, and preference scoring. Further development will focus on multimodal model integration, recommendation optimization, and performance evaluation.
+
+
 ## Author
 
 **Shreya Sharma**
