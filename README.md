@@ -1,45 +1,89 @@
-# AI Learning Journey & Daily Progress
+👕 AI-Powered T-Shirt Recommendation using CLIP & LLaVA
+📖 About the Project
 
-Welcome to my AI learning repository! This repository documents my learning journey, research notes, and daily progress while exploring modern AI models and building real-world projects.
+This project was developed as part of my AI internship to solve a Multimodal Product Choice Personalization problem. The goal was to recommend T-shirts based on a user's previous visual preferences rather than relying only on product descriptions or keywords.
 
-## 📚 Research Papers Studied
+The recommendation system learns from a user's historical choices, identifies visual patterns using Vision-Language Models, and recommends similar products from a new collection. Along with recommendations, the system also generates natural language explanations for why a particular T-shirt is suggested.
 
-As part of my learning process, I have studied the following research papers:
+During the internship, I continuously improved the implementation by experimenting with different approaches, studying research papers, and comparing multiple recommendation techniques before arriving at the final workflow.
 
-* **CLIP (Contrastive Language–Image Pre-training)**
-* **LLaVA (Large Language and Vision Assistant)**
+🎯 Problem Statement
 
-For each paper, I created detailed notes to understand the architecture, working principles, and practical applications.
+The objective of this project is to build an AI-powered recommendation system that can:
 
-## 🚀 Current Project
+Learn a user's visual preferences from previously selected T-shirts.
+Recommend the most relevant products from a new dataset.
+Explain the reason behind each recommendation using a Vision-Language Model.
+Explore different machine learning approaches to identify the most suitable recommendation pipeline.
+🚀 Project Development Journey
 
-I am currently working on an **AI-Powered T-Shirt Recommendation System**.
+Instead of directly implementing the final solution, the project was developed in multiple stages. Every day, new ideas and improvements were added based on observations, experiments, and discussions.
 
-The project is being developed using **Google Colab**, where I am experimenting with AI models and implementing the recommendation pipeline step by step.
+Approach 1: CLIP + LLaVA
 
-## 📌 What This Repository Contains
+The first implementation focused only on CLIP and LLaVA.
 
-* 📖 Notes from CLIP and LLaVA research papers
-* 💻 Daily learning updates
-* 📝 Progress logs
-* 🚀 Development updates of the AI T-Shirt Recommendation project
-* 📂 Supporting files related to my learning journey
+CLIP was used to extract visual embeddings from T-shirt images.
+Similarity between historical preferences and new products was calculated using CLIP embeddings.
+LLaVA was then used to generate explanations describing why the recommended T-shirt matches the user's preferences.
 
-## 🔄 Daily Updates
+This approach helped understand how Vision-Language Models can perform image-based recommendation without training a separate classifier.
 
-I regularly upload my daily progress, learning notes, and project updates to this repository. This serves as a record of my AI learning journey and the development of my recommendation system.
+Approach 2: CLIP + LLaVA + Logistic Regression
 
-## 🎯 Goal
+After the initial implementation, the recommendation pipeline was extended by adding Logistic Regression.
 
-The objective of this repository is to:
+In this approach:
 
-* Learn state-of-the-art Vision-Language Models (VLMs)
-* Understand research papers through self-study and note-making
-* Build practical AI projects by applying these concepts
-* Track consistent learning and project progress
+CLIP extracted image embeddings.
+Logistic Regression learned the user's preferred and non-preferred patterns.
+Products were ranked according to their predicted preference scores.
+LLaVA generated human-readable explanations for the final recommendations.
 
----
+This experiment introduced supervised preference learning into the recommendation system.
 
-**Status:** 🚧 Work in Progress
+Approach 3: CLIP + LLaVA + K-Nearest Neighbors (KNN)
 
-More updates will be added regularly as I continue learning and developing the AI-Powered T-Shirt Recommendation System.
+To compare another recommendation strategy, KNN was also implemented.
+
+In this version:
+
+CLIP generated visual embeddings.
+KNN identified products that were visually closest to the user's preferred items.
+The nearest matching products were recommended.
+LLaVA explained the reasoning behind each recommendation.
+
+This allowed comparison between similarity-based recommendation and classifier-based recommendation.
+
+📚 Research Papers Studied
+
+Before implementing the models, I explored research papers related to Vision-Language Models to better understand their working principles.
+
+The papers mainly focused on:
+
+CLIP (Contrastive Language–Image Pretraining)
+LLaVA (Large Language and Vision Assistant)
+
+Reading these papers helped me understand concepts such as image-text representation learning, multimodal understanding, zero-shot learning, visual reasoning, and explainable AI, which guided the implementation throughout the project.
+
+🤖 Understanding LLaVA
+
+LLaVA is a Vision-Language Model that combines image understanding with natural language generation. Unlike traditional image classification models, it can understand visual content and provide detailed textual responses.
+
+In this project, LLaVA was used to explain why a recommended T-shirt matches the user's historical preferences, making the recommendation system more interpretable and user-friendly.
+
+🌟 Applications of LLaVA
+
+During the literature review, I also explored some popular real-world applications of LLaVA.
+
+1. Visual Chatbot
+
+LLaVA can interact with users by answering questions related to an image and carrying out image-based conversations.
+
+2. Visual Question Answering (VQA)
+
+LLaVA can analyze an image and answer questions such as identifying colors, objects, clothing styles, or other visual details present in the image.
+
+💡 Key Learning
+
+Throughout this project, I gained practical experience with Vision-Language Models, multimodal recommendation systems, preference learning, CLIP embeddings, Logistic Regression, KNN-based recommendation, prompt engineering, and explainable AI. I also learned how to read and understand research papers and gradually improve a project through continuous experimentation and implementation.
